@@ -1,0 +1,6 @@
+
+set -eu
+
+GO_PACKAGES=$(go list ./... | grep -v "test")
+
+go test $GO_PACKAGES
